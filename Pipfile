@@ -1,0 +1,33 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+ipython = "*"
+black = "*"
+
+[packages]
+fastapi = "*"
+fastapi-sqlalchemy = "*"
+pydantic = "*"
+alembic = "*"
+psycopg2 = "*"
+uvicorn = "*"
+python-dotenv = "*"
+importlib-resources = "*"
+asyncpg = "*"
+databases = {extras = ["postgresql"], version = "*"}
+fastapi-users = {extras = ["sqlalchemy"], version = "*"}
+celery = {extras = ["redis"], version = "*"}
+flower = "*"
+fastapi-cache2 = {extras = ["redis"], version = "*"}
+pytest = "*"
+httpx = "*"
+
+[requires]
+python_version = "3.10"
+
+[pipenv]
+allow_prereleases = true
